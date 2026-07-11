@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+    <h1>🏴‍☠️ Reverse Quest</h1>
+
+    <p id="story">
+        🗺️ Every correct opposite moves you closer to the hidden treasure. Beware of traps!
+    </p>
+
+    <div class="info">
+        ❤️ Lives: <span id="lives">3</span>
+        &nbsp;&nbsp;&nbsp;
+        ⭐ Score: <span id="score">0</span>
+    </div>
+
+    <!-- Treasure Progress -->
+    <div id="map">
+        🚶 ➜ ⬜ ➜ ⬜ ➜ ⬜ ➜ ⬜ ➜ 🏆
+    </div>
+
+    <div class="box">
+
+        <h2 id="question">Hot</h2>
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="Enter the opposite word..."
+            autocomplete="off"
+        >
+
+        <br><br>
+
+        <button onclick="checkAnswer()">
+            Submit
+        </button>
+
+        <p id="msg"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
